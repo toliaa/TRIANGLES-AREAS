@@ -17,7 +17,7 @@ This C++/CLI application calculates the area of triangles based on either three 
 
 1. Clone the repository.
     ```sh
-    git clone https://github.com/yourusername/your-repository.git
+    git clone https://github.com/toliaa/TRIANGLES-AREAS.git
     ```
 
 2. Open the project in Visual Studio.
