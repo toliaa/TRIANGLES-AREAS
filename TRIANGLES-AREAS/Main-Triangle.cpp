@@ -1,17 +1,8 @@
 #include "Main-Triangle.h"
-
 #include <cmath>
-
-#include "Main-Triangle.h"
 #include <iostream>
 #include <Windows.h>
 #include <string>
-
-using namespace System;
-using namespace System::Windows::Forms;
-
-#include <cmath>
-#include <Windows.h>
 
 using namespace System;
 using namespace System::Windows::Forms;
