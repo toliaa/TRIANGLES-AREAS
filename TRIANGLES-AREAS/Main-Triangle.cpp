@@ -1,16 +1,13 @@
-#include "Main-Triangle.h"
 
 #include <cmath>
-
 #include "Main-Triangle.h"
-#include <iostream>
 #include <Windows.h>
-#include <string>
 
 using namespace System;
 using namespace System::Windows::Forms;
 
 #include <cmath>
+#include "Main-Triangle.h"
 #include <Windows.h>
 
 using namespace System;
@@ -63,17 +60,25 @@ public:
     // Implementation of CalculateMedianLength for VertexTriangle
     virtual double CalculateMedianLength() override
     {
-        // Implement the calculation of the median length for VertexTriangle
-        // You can replace this with the actual formula
-        return 0.0;
+        double a = CalculateSideLength(x2, y2, x3, y3);
+        double b = CalculateSideLength(x1, y1, x3, y3);
+        double c = CalculateSideLength(x1, y1, x2, y2);
+
+        // Calculate median length using the formula: sqrt(2b^2 + 2c^2 - a^2)/2
+        double medianLength = 0.5 * Math::Sqrt(2 * b * b + 2 * c * c - a * a);
+        return medianLength;
     }
 
     // Implementation of CalculateParallelMedian for VertexTriangle
     virtual double CalculateParallelMedian() override
     {
-        // Implement the calculation of the parallel median for VertexTriangle
-        // You can replace this with the actual formula
-        return 0.0;
+        double a = CalculateSideLength(x2, y2, x3, y3);
+        double b = CalculateSideLength(x1, y1, x3, y3);
+        double c = CalculateSideLength(x1, y1, x2, y2);
+
+        // Calculate parallel median using the formula: sqrt(2b^2 + 2c^2 - a^2)/2
+        double parallelMedian = 0.5 * Math::Sqrt(2 * b * b + 2 * c * c - a * a);
+        return parallelMedian;
     }
 
 private:
@@ -128,16 +133,15 @@ public:
     // Implementation of CalculateMedianLength for SideTriangle
     virtual double CalculateMedianLength() override
     {
-        // Implement the calculation of the median length for SideTriangle
-        // You can replace this with the actual formula
+        
         return 0.0;
     }
 
     // Implementation of CalculateParallelMedian for SideTriangle
     virtual double CalculateParallelMedian() override
     {
-        // Implement the calculation of the parallel median for SideTriangle
-        // You can replace this with the actual formula
+        
+       
         return 0.0;
     }
 
@@ -298,9 +302,9 @@ int main(array<System::String^>^ args)
     Application::EnableVisualStyles();
     Application::SetCompatibleTextRenderingDefault(false);
 
-    // Create and run the form
+ 
     Application::Run(gcnew TriangleForm());
 
     return 0;
 }
-//end//
+
