@@ -1,16 +1,23 @@
 
-#include <cmath>
 #include "Main-Triangle.h"
+#include <cmath>
+
+
+#include <iostream>
 #include <Windows.h>
 
 using namespace System;
 using namespace System::Windows::Forms;
 
-
+#include <cmath>
+#include <Windows.h>
+using namespace System;
+using namespace System::Windows::Forms;
 
 // Abstract base class for triangles
 ref class Triangle abstract
 {
+
 public:
     virtual double CalculateArea() abstract;
     virtual double CalculateInscribedRadius() abstract;
@@ -302,4 +309,4 @@ int main(array<System::String^>^ args)
 
     return 0;
 }
-//
+//end//
