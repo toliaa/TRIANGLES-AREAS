@@ -38,8 +38,7 @@ This C++/CLI application calculates the area of triangles based on either three 
    - Enter the lengths of the three sides.
    - Click the "Calculate Side Triangle Area" button.
 
-5. View the calculated area in the output.
-6. 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
