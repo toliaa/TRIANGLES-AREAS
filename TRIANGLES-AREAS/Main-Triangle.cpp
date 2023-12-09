@@ -6,12 +6,7 @@
 using namespace System;
 using namespace System::Windows::Forms;
 
-#include <cmath>
-#include "Main-Triangle.h"
-#include <Windows.h>
 
-using namespace System;
-using namespace System::Windows::Forms;
 
 // Abstract base class for triangles
 ref class Triangle abstract
@@ -307,4 +302,5 @@ int main(array<System::String^>^ args)
 
     return 0;
 }
-//upgs//
+
+//sa
